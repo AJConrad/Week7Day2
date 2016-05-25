@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45FB5BB5DDCB83914F2119DC /* libPods-DinoBytes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 804574FAAFAFDF2923963335 /* libPods-DinoBytes.a */; };
 		497975B31CF4D084004117E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497975B21CF4D084004117E7 /* AppDelegate.swift */; };
 		497975B51CF4D084004117E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497975B41CF4D084004117E7 /* ViewController.swift */; };
 		497975B81CF4D084004117E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497975B61CF4D084004117E7 /* Main.storyboard */; };
 		497975BA1CF4D084004117E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497975B91CF4D084004117E7 /* Assets.xcassets */; };
 		497975BD1CF4D084004117E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497975BB1CF4D084004117E7 /* LaunchScreen.storyboard */; };
+		497975CD1CF4ED5F004117E7 /* Dino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497975CC1CF4ED5F004117E7 /* Dino.swift */; };
+		497975CF1CF4F0FD004117E7 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497975CE1CF4F0FD004117E7 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,12 @@
 		497975B91CF4D084004117E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		497975BC1CF4D084004117E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		497975BE1CF4D084004117E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		497975C81CF4EBF1004117E7 /* DinoBytes-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DinoBytes-Bridging-Header.h"; sourceTree = "<group>"; };
+		497975CC1CF4ED5F004117E7 /* Dino.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dino.swift; sourceTree = "<group>"; };
+		497975CE1CF4F0FD004117E7 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		804574FAAFAFDF2923963335 /* libPods-DinoBytes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DinoBytes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94D1AF4B261EE4EB2E83F353 /* Pods-DinoBytes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinoBytes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DinoBytes/Pods-DinoBytes.debug.xcconfig"; sourceTree = "<group>"; };
+		A89EE2E934BE4A7BE8AC7B9B /* Pods-DinoBytes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DinoBytes.release.xcconfig"; path = "Pods/Target Support Files/Pods-DinoBytes/Pods-DinoBytes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FB5BB5DDCB83914F2119DC /* libPods-DinoBytes.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +50,8 @@
 			children = (
 				497975B11CF4D084004117E7 /* DinoBytes */,
 				497975B01CF4D084004117E7 /* Products */,
+				52ACC59879FD8DEC3A7961C7 /* Pods */,
+				D0EE67ADB0E68A37807B67A6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +68,32 @@
 			children = (
 				497975B21CF4D084004117E7 /* AppDelegate.swift */,
 				497975B41CF4D084004117E7 /* ViewController.swift */,
+				497975CE1CF4F0FD004117E7 /* DetailViewController.swift */,
 				497975B61CF4D084004117E7 /* Main.storyboard */,
 				497975B91CF4D084004117E7 /* Assets.xcassets */,
 				497975BB1CF4D084004117E7 /* LaunchScreen.storyboard */,
 				497975BE1CF4D084004117E7 /* Info.plist */,
+				497975CC1CF4ED5F004117E7 /* Dino.swift */,
+				497975C81CF4EBF1004117E7 /* DinoBytes-Bridging-Header.h */,
 			);
 			path = DinoBytes;
+			sourceTree = "<group>";
+		};
+		52ACC59879FD8DEC3A7961C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				94D1AF4B261EE4EB2E83F353 /* Pods-DinoBytes.debug.xcconfig */,
+				A89EE2E934BE4A7BE8AC7B9B /* Pods-DinoBytes.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D0EE67ADB0E68A37807B67A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				804574FAAFAFDF2923963335 /* libPods-DinoBytes.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +103,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 497975C11CF4D084004117E7 /* Build configuration list for PBXNativeTarget "DinoBytes" */;
 			buildPhases = (
+				BFF4F5D24217D60958AA60B4 /* 📦 Check Pods Manifest.lock */,
 				497975AB1CF4D084004117E7 /* Sources */,
 				497975AC1CF4D084004117E7 /* Frameworks */,
 				497975AD1CF4D084004117E7 /* Resources */,
+				9269B77BC68C86F38BE9B2E7 /* 📦 Embed Pods Frameworks */,
+				9C5141FAE5A4E636F1B59EFA /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -97,6 +132,11 @@
 					497975AE1CF4D084004117E7 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = TYEMF78S4K;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -131,13 +171,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9269B77BC68C86F38BE9B2E7 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DinoBytes/Pods-DinoBytes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C5141FAE5A4E636F1B59EFA /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DinoBytes/Pods-DinoBytes-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFF4F5D24217D60958AA60B4 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		497975AB1CF4D084004117E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				497975CD1CF4ED5F004117E7 /* Dino.swift in Sources */,
 				497975B51CF4D084004117E7 /* ViewController.swift in Sources */,
 				497975B31CF4D084004117E7 /* AppDelegate.swift in Sources */,
+				497975CF1CF4F0FD004117E7 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,23 +340,30 @@
 		};
 		497975C21CF4D084004117E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94D1AF4B261EE4EB2E83F353 /* Pods-DinoBytes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DinoBytes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ironyardstudent.DinoBytes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DinoBytes/DinoBytes-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		497975C31CF4D084004117E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A89EE2E934BE4A7BE8AC7B9B /* Pods-DinoBytes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DinoBytes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ironyardstudent.DinoBytes;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DinoBytes/DinoBytes-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -289,6 +386,7 @@
 				497975C31CF4D084004117E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
